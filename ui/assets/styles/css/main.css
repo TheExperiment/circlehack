@@ -359,8 +359,8 @@
 /**********       BREAKPOINTS       **********/
 /**************************************************/
 body {
-  background: white;
-  color: #333330;
+  background: #1daf7e;
+  color: #ffffff;
   font-family: 'Avenir Next';
   text-align: left;
   padding: 0;
@@ -443,19 +443,39 @@ button {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: white;
+  background: #695a96;
   width: 100vw;
   height: 100vh;
   padding: 0px 60px;
   overflow: hidden;
   border: 1px solid #666661;
 }
-.viv-icon {
-  position: absolute;
+[contenteditable="true"] {
+  font-size: 1.75em;
+  line-height: 1.5;
+}
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: none;
+  outline: none;
+  background-color: #2dbf8e;
+}
+[contenteditable="true"]:focus::before {
+  content: "Edit Me!";
+}
+.header {
+  background: #ffffff;
+}
+.footer {
+  background: #ffffff;
+}
+.social-icon {
+  position: relative;
+  display: inline-block;
   top: 38px;
   left: 16px;
-  width: 22px;
-  height: 22px;
+  width: 36px;
+  height: 36px;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;

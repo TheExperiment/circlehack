@@ -2,8 +2,8 @@
 // RESETS
 
 body{
-  background: @gray-1;
-  color: @gray-7;
+  background: @green-1;
+  color: @white;
   font-family: 'Avenir Next';
   text-align: left;
   padding: 0;
@@ -68,7 +68,7 @@ button{
   margin: auto;
   position: fixed;
   .centerXY;
-  background: @gray-1;
+  background: @purple-1;
   width: 100vw;
   height: 100vh;
   padding: 0px 60px;
@@ -76,12 +76,49 @@ button{
   border: 1px solid @gray-6;
 }
 
-.viv-icon{
-  position: absolute;
+[contenteditable="true"] {
+font-size: 1.75em;
+line-height: 1.5;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+border:none;
+outline:none;
+background-color: @green-2;
+}
+
+// [contenteditable="true"]:focus > style{
+// display:block;
+// font-size: .75em;
+// color: blue;
+// font-family: courier, sans-serif;
+// background: #fff;
+// line-height: 1.5;
+// position:relative;
+// right: -36em;
+// top:-2em;
+// }
+
+[contenteditable="true"]:focus::before{
+content:"Edit Me!";
+} 
+
+.header {
+  background: @white;
+}
+
+.footer {
+  background: @white;
+}
+
+.social-icon{
+  position: relative;
+  display: inline-block;
   top: 38px;
   left: 16px;
-  width: 22px;
-  height: 22px;
+  width: 36px;
+  height: 36px;
   .transition(.2s,ease-out);
   padding: 0px 5px;
   .rounded(50%);

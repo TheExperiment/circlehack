@@ -9,8 +9,6 @@ body{
   text-align: left;
   padding: 0;
   margin: 0;
-  background: @gray-8;
-  background-size: cover;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -81,19 +79,29 @@ button{
   padding: .5rem .5rem;
 }
 
+.share-link-text{
+  padding: 1rem 0 0 0;
+  opacity: .5;
+}
+
+.link{
+  opacity: 1;
+}
+
 .screen-title{
   font-size: @fontsize-1;
 }
 
 [contenteditable="true"] {
 font-size: @fontsize-2;
-line-height: 1.5;
+line-height: 1.5rem;
 width: 30%;
+border-width:1px; 
+border-bottom-style:solid;
 }
 
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus{
-border:none;
 outline:none;
 background-color: @green-2;
 }

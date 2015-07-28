@@ -359,7 +359,6 @@
 /**********       BREAKPOINTS       **********/
 /**************************************************/
 body {
-  background: #1daf7e;
   color: #ffffff;
   font-family: 'Avenir Next';
   font-size: 0.75rem;
@@ -442,15 +441,19 @@ button {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: #695a96;
   width: 100vw;
   height: 100vh;
-  padding: 0rem 3rem;
+  padding: 0rem 0rem;
   overflow: hidden;
   border: 1px solid #666661;
 }
 .screen-1 {
   padding: .5rem .5rem;
+  background: #695a96;
+}
+.screen-2 {
+  padding: .5rem .5rem;
+  background: #1daf7e;
 }
 .share-link-text {
   padding: 1rem 0 0 0;

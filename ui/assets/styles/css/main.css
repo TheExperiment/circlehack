@@ -427,6 +427,7 @@ button {
 .app {
   margin: auto;
   position: fixed;
+  background-color: #695a96;
   left: 50%;
   top: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);

@@ -366,8 +366,6 @@ body {
   text-align: left;
   padding: 0;
   margin: 0;
-  background: #1f1e1d;
-  background-size: cover;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -454,17 +452,25 @@ button {
 .screen-1 {
   padding: .5rem .5rem;
 }
+.share-link-text {
+  padding: 1rem 0 0 0;
+  opacity: .5;
+}
+.link {
+  opacity: 1;
+}
 .screen-title {
   font-size: 1.375rem;
 }
 [contenteditable="true"] {
   font-size: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.5rem;
   width: 30%;
+  border-width: 1px;
+  border-bottom-style: solid;
 }
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus {
-  border: none;
   outline: none;
   background-color: #2dbf8e;
 }

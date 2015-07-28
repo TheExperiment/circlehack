@@ -50,15 +50,18 @@ h6{
 }
 
 button{
-  background: @gray-6;
-  color: @gray-1;
-  padding: 8px 12px;
+  background: #494075;
+  color: #fff;
+  padding: 28px 12px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   outline: none;
   border: none;
-  .rounded(3px);
   font-family: inherit;
   letter-spacing: .09rem;
-  font-size: .6rem;
+  font-size: 1rem;
 }
 
 .app{
@@ -79,7 +82,7 @@ button{
 
 .share-link{
   position: relative;
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 .share-link-text{
@@ -94,7 +97,7 @@ button{
 
 .screen-title{
   font-size: @fontsize-1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 [contenteditable="true"] {
@@ -111,8 +114,10 @@ button{
 
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus{
-outline:none;
-background-color: @green-2;
+  outline:none;
+  color: #fff;
+  content: '';
+
 }
 
 // [contenteditable="true"]:focus > style{
@@ -128,12 +133,12 @@ background-color: @green-2;
 // }
 
 [contenteditable="true"]:focus::before{
-content:"Edit Me!";
+  color: #fff;
 } 
 
 .event-title{
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .seed-amount{
@@ -152,8 +157,8 @@ content:"Edit Me!";
     width: 80px;
   }
   position: fixed;
-  left: 20px;
-  top: 20px;
+  left: 53px;
+  top: 30px;
 }
 
 .social-icon{

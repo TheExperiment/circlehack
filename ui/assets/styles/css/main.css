@@ -362,6 +362,7 @@ body {
   background: #1daf7e;
   color: #ffffff;
   font-family: 'Avenir Next';
+  font-size: 0.75rem;
   text-align: left;
   padding: 0;
   margin: 0;
@@ -446,13 +447,20 @@ button {
   background: #695a96;
   width: 100vw;
   height: 100vh;
-  padding: 0px 60px;
+  padding: 0rem 3rem;
   overflow: hidden;
   border: 1px solid #666661;
 }
+.screen-1 {
+  padding: .5rem .5rem;
+}
+.screen-title {
+  font-size: 1.375rem;
+}
 [contenteditable="true"] {
-  font-size: 1.75em;
+  font-size: 0.75rem;
   line-height: 1.5;
+  width: 30%;
 }
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus {
@@ -472,10 +480,11 @@ button {
 .social-icon {
   position: relative;
   display: inline-block;
-  top: 38px;
-  left: 16px;
+  top: 18px;
+  left: 0px;
   width: 36px;
   height: 36px;
+  fill: #fff;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;

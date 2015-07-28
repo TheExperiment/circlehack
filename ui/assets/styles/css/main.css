@@ -412,17 +412,18 @@ h6 {
   text-transform: uppercase;
 }
 button {
-  background: #666661;
-  color: white;
-  padding: 8px 12px;
+  background: #494075;
+  color: #fff;
+  padding: 28px 12px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   outline: none;
   border: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   font-family: inherit;
   letter-spacing: .09rem;
-  font-size: .6rem;
+  font-size: 1rem;
 }
 .app {
   margin: auto;
@@ -519,7 +520,7 @@ button {
 }
 .share-link {
   position: relative;
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 .share-link-text {
@@ -532,7 +533,7 @@ button {
 }
 .screen-title {
   font-size: 1.575rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 [contenteditable="true"] {
   font-size: 0.9rem;
@@ -548,14 +549,15 @@ button {
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus {
   outline: none;
-  background-color: #2dbf8e;
+  color: #fff;
+  content: '';
 }
 [contenteditable="true"]:focus::before {
-  content: "Edit Me!";
+  color: #fff;
 }
 .event-title {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .seed-amount {
   width: 45%;
@@ -568,8 +570,8 @@ button {
 }
 .header {
   position: fixed;
-  left: 20px;
-  top: 20px;
+  left: 53px;
+  top: 30px;
 }
 .header svg {
   fill: #fff;

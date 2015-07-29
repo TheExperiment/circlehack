@@ -61,6 +61,7 @@ button{
   font-family: inherit;
   letter-spacing: .09rem;
   font-size: 1rem;
+  .transition(.7s);
 }
 
 .app{
@@ -84,6 +85,9 @@ button{
   width: 100%;
   height: 100vh;
   .transition(.5s,@easeOutBack);
+  button{
+    opacity: .2;
+  }
 }
 
 .screen-2{
@@ -160,6 +164,11 @@ button{
   opacity: .5;
 }
 
+.share-options{
+  opacity: 0;
+  .transition(.4s);
+}
+
 .link{
   opacity: 1;
   margin-top: 1rem;
@@ -174,8 +183,9 @@ button{
   font-size: @fontsize-2;
   line-height: 2.5rem;
   border-width:1px; 
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px rgba(255,255,255,.4);
   color: rgba(255,255,255,.5);
+  .transition(.3s);
   span{
     font-size: @fontsize-1;
     color: #fff;
@@ -187,7 +197,8 @@ button{
   outline:none;
   color: #fff;
   content: '';
-
+  font-size: @fontsize-1;
+  border-bottom: solid 1px #fff;
 }
 
 // [contenteditable="true"]:focus > style{
@@ -205,6 +216,11 @@ button{
 [contenteditable="true"]:focus::before{
   color: #fff;
 } 
+
+.active-editable{
+  font-size: @fontsize-1;
+  color: #fff;
+}
 
 .event-title{
   width: 100%;

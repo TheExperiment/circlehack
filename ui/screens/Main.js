@@ -31,6 +31,15 @@ $(function() {
     $('.app').addClass('is-screen2')
   })
 
+  $('.screen-2 button').on('click',function(){
+    $('.app').addClass('is-screen3')
+  })
+
+  $('.screen-3 button').on('click',function(){
+    alert('hello')
+    $('.app').addClass('is-screen4')
+  })
+
   function resizeHandler (e) {
     _winW = $(window).width();
     _winH = $(window).height();

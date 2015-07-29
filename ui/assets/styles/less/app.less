@@ -81,7 +81,7 @@ button{
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
   height: 100vh;
   .transition(.5s,@easeOutBack);
@@ -96,6 +96,7 @@ button{
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 4;
   width: 100%;
   height: 100%;
   button{
@@ -107,6 +108,60 @@ button{
     }
   }
 }
+
+
+.screen-3{
+  padding: 5rem 3rem;
+  background: @green-1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  button{
+    width: 100%;
+    background: #209671;
+    float: left;
+  }
+}
+
+.screen-title-last{
+  opacity: .7;
+  font-size: 3rem;
+  .centerXY;
+  position: absolute;
+  display: inline;
+  word-wrap: break-word;
+  font-weight: bold;
+  background: #010101;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 35%;
+}
+
+
+.screen-4{
+
+  background: @purple-1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  button{
+    width: 100%;
+    background: #209671;
+    float: left;
+  }
+  .burning-man{
+    width: 100%;
+    position: fixed;
+  }
+
+}
+
 
 .pool-goal-number{
   font-size: @fontsize-1;
@@ -287,4 +342,15 @@ button{
   }
 }
 
+.is-screen3{
+  .screen-2{
+    left: -100%;
+  }
+}
+
+.is-screen4{
+  .screen-3{
+    left: -100%;
+  }
+}
 

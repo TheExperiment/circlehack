@@ -530,30 +530,6 @@ button {
   background: #209671;
   float: left;
 }
-.screen-title-last {
-  opacity: .7;
-  font-size: 3rem;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  -moz-transform: translate3d(-50%, -50%, 0);
-  -ms-transform: translate3d(-50%, -50%, 0);
-  -o-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  display: inline;
-  word-wrap: break-word;
-  font-weight: bold;
-  background: #010101;
-  color: #FFF;
-  text-transform: uppercase;
-  width: 35%;
-}
 .screen-4 {
   background: #695a96;
   position: fixed;
@@ -571,6 +547,21 @@ button {
 .screen-4 .burning-man {
   width: 100%;
   position: fixed;
+}
+.screen-4 .screen-title-last {
+  opacity: .7;
+  font-size: 2rem;
+  position: absolute;
+  display: inline;
+  word-wrap: break-word;
+  font-weight: bold;
+  background: #010101;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 100%;
+  top: 37%;
+  height: 100%;
+  padding: 7rem 4rem;
 }
 .pool-goal-number {
   font-size: 1.575rem;

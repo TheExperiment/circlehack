@@ -36,7 +36,6 @@ $(function() {
   })
 
   $('.screen-3 button').on('click',function(){
-    alert('hello')
     $('.app').addClass('is-screen4')
   })
 
